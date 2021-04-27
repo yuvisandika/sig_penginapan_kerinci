@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhoneActivity"
+    android:orientation="vertical"
+    android:layout_weight="1">
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/a1"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/home_top" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/i2"
+            android:src="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/i1"
+            android:layout_centerInParent="true"
+            android:src="#fff"
+            android:layout_width="200dp"
+            android:layout_height="200dp"/>
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/g1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/gif"/>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/g2"
+            android:src="@drawable/ic_maps"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_kerinci"
+            android:alpha="0.4"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/about"
+            android:gravity="center"
+            android:text="Aplikasi Sistem Informasi Geografis Lokasi Penginapan Di Kabupaten Kerinci"
+            android:textSize="40dp"
+            android:padding="10dp"/>
+
+        <View
+            android:id="@+id/v1"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded"/>
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_toRightOf="@+id/v1"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/rounded"
+            android:layout_margin="10dp"
+            android:text="Logout"/>
+
+        <Button
+            android:id="@+id/about"
+            android:layout_toLeftOf="@+id/v1"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/rounded"
+            android:layout_margin="10dp"
+            android:text="Tentang Pengembang"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="0"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#4CAF50">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_alamat"
+            android:layout_centerHorizontal="true"
+            app:tint="#fff" />
+
+        <ImageView
+            android:id="@+id/maps"
+            android:layout_toLeftOf="@+id/home"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_pin"
+            app:tint="#fff" />
+
+        <ImageView
+            android:id="@+id/phone"
+            android:layout_toRightOf="@+id/home"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_about"
+            app:tint="#000" />
+
+
+    </RelativeLayout>
+</LinearLayout>

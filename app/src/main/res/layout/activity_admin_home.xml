@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminHome"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/l1"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:textColor="#ff0000"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="ADMIN"/>
+
+        <View
+            android:layout_below="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#2196F3"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_margin="10dp"
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+
+            android:layout_margin="@dimen/fab_labels_margin"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center"
+            app:fab_expandDirection="up"
+            app:fab_labelStyle="@style/LableStyle"
+            android:layout_alignParentEnd="true">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/ft_tambah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_size="mini"
+                app:fab_title="Tambah"
+                app:fab_icon="@drawable/ic_add"/>
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/ft_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_size="mini"
+                app:fab_title="Edit"
+                app:fab_colorNormal="#03A9F4"
+                app:fab_icon="@drawable/ic_pan"/>
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/ft_hapus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_size="mini"
+                app:fab_title="Hapus"
+                app:fab_colorNormal="#990000"
+                app:fab_icon="@drawable/ic_del"/>
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

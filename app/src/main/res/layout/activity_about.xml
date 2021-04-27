@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".About">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:alpha="0.3"
+            android:id="@+id/a"
+            android:src="@drawable/kerinci"/>
+
+        <TextView
+            android:id="@+id/ab1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:text=" Dirancang dan Dikembangkan Oleh \n Mahasiswa Universitas Dinamika Bangsa Jambi"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/abc1"
+            android:layout_below="@+id/ab1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:src="#f5a1b1"/>
+        <ImageView
+            android:layout_below="@+id/ab1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginLeft="18dp"
+            android:src="@drawable/unama"/>
+
+        <TextView
+            android:layout_below="@id/ab1"
+            android:layout_toRightOf="@id/abc1"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_toLeftOf="@+id/btncall"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:text="ADITYO WIDODO"/>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/btncall"
+            android:onClick="onCall"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/ab1"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:src="@drawable/phone_menu"/>
+
+
+
+
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff0000"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:text="Untuk Penambahan Lokasi Silahkan Hubungi Admin"/>
+
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

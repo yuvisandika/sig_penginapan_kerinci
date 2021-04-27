@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4CAF50">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/l1"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:tint="#fff"
+            android:src="@drawable/gmaps"/>
+
+    </RelativeLayout>
+
+    <fragment
+        android:layout_weight="1"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        map:cameraZoom="13"
+        tools:context=".MapsActivity" />
+
+    <RelativeLayout
+        android:layout_weight="0"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#4CAF50">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_alamat"
+            android:layout_centerHorizontal="true"
+            app:tint="#fff" />
+
+        <ImageView
+            android:id="@+id/maps"
+            android:layout_toLeftOf="@+id/home"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_pin"
+            app:tint="#000" />
+
+        <ImageView
+            android:id="@+id/phone"
+            android:layout_toRightOf="@+id/home"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_about"
+            app:tint="#fff" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+

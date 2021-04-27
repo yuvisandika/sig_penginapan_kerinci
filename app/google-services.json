@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "738850157656",
+    "project_id": "dbhotel-43101",
+    "storage_bucket": "dbhotel-43101.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738850157656:android:54def513f9479893bdc62d",
+        "android_client_info": {
+          "package_name": "com.example.sig_hotel_kerinci"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "738850157656-kpi5br5lqeg6dh6u7mf3qlrav6nd9veh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sig_hotel_kerinci",
+            "certificate_hash": "826488fd46ac703fb7819bc7cd8e71fc455e3120"
+          }
+        },
+        {
+          "client_id": "738850157656-i50sc1usct6hfaifpvg18k54kdmhthat.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnNq0gK43znNxJP84KkN0ScgvYt_FibRs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "738850157656-i50sc1usct6hfaifpvg18k54kdmhthat.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

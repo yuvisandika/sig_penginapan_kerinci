@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item> <!--disable dark mode-->
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--rating-->
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">#8b8b8b</item>
+        <item name="colorControlActivated">#ffd700</item>
+    </style>
+
+    <!--Floating Button-->
+    <style name="LableStyle">
+        <item name="android:background">@drawable/bg_label</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminLokasiEdit"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <!--Nama tempat-->
+                <ImageView
+                    android:id="@+id/ic_nama"
+
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_hotel"/>
+                <TextView
+                    android:id="@+id/nama1"
+                    android:layout_toRightOf="@+id/ic_nama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:text="Nama Tempat :"/>
+                <EditText
+                    android:id="@+id/txtnama"
+                    android:layout_toRightOf="@id/ic_nama"
+                    android:layout_below="@+id/nama1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint=" Isi Nama Tempat . . ."/>
+                <!--_________________-->
+
+                <!--Alamat-->
+                <ImageView
+                    android:id="@+id/ic_alamat"
+                    android:layout_below="@id/txtnama"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_alamat"/>
+                <TextView
+                    android:id="@+id/alamat1"
+                    android:layout_below="@id/txtnama"
+                    android:layout_toRightOf="@+id/ic_nama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:text="Alamat :"/>
+                <EditText
+                    android:id="@+id/txtalamat"
+                    android:layout_toRightOf="@id/ic_alamat"
+                    android:layout_below="@+id/alamat1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint=" Jl . . . . . ."/>
+                <!--_________________-->
+
+                <!--Nomor telp-->
+                <ImageView
+                    android:id="@+id/ic_nomor"
+                    android:layout_below="@id/txtalamat"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_phone"/>
+                <TextView
+                    android:id="@+id/nomor1"
+                    android:layout_below="@id/txtalamat"
+                    android:layout_toRightOf="@+id/ic_nama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:text="Nomor Telephone :"/>
+                <EditText
+                    android:id="@+id/txtnomor"
+                    android:layout_toRightOf="@id/ic_alamat"
+                    android:layout_below="@+id/nomor1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:inputType="number"
+                    android:hint=" 0800000000000"/>
+
+                <!--_________________-->
+
+                <!--Harga-->
+                <ImageView
+                    android:id="@+id/ic_harga"
+                    android:layout_below="@id/txtnomor"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_harga"/>
+                <TextView
+                    android:id="@+id/harga1"
+                    android:layout_below="@id/txtnomor"
+                    android:layout_toRightOf="@+id/ic_nama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:text="Harga :"/>
+                <TextView
+                    android:id="@+id/kamar"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toRightOf="@id/ic_nama"
+                    android:layout_below="@+id/harga1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tipe Kamar"
+                    android:textSize="15dp"/>
+
+                <EditText
+                    android:id="@+id/txttipe1"
+                    android:layout_below="@+id/kamar"
+                    android:layout_toRightOf="@id/ic_harga"
+                    android:layout_toLeftOf="@+id/hollow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:hint="Tipe Kamar"/>
+                <EditText
+                    android:id="@+id/txtharga1"
+                    android:layout_below="@+id/kamar"
+                    android:layout_toRightOf="@id/hollow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:hint="Rp. . . . . "/>
+                <EditText
+                    android:id="@+id/txttipe2"
+                    android:layout_below="@+id/txttipe1"
+                    android:layout_toRightOf="@id/ic_harga"
+                    android:layout_toLeftOf="@+id/hollow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:hint="Tipe Kamar"/>
+                <EditText
+                    android:id="@+id/txtharga2"
+                    android:layout_below="@+id/txttipe1"
+                    android:layout_toRightOf="@id/hollow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:hint="Rp. . . . . "/>
+                <EditText
+                    android:id="@+id/txttipe3"
+                    android:layout_below="@+id/txttipe2"
+                    android:layout_toRightOf="@id/ic_harga"
+                    android:layout_toLeftOf="@+id/hollow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:hint="Tipe Kamar"/>
+                <EditText
+                    android:id="@+id/txtharga3"
+                    android:layout_below="@+id/txttipe2"
+                    android:layout_toRightOf="@id/hollow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:hint="Rp. . . . . "/>
+
+                <!--_________________-->
+
+                <!--Keordinat-->
+                <ImageView
+                    android:id="@+id/ic_keordinat"
+                    android:layout_below="@id/txtharga3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_pin"/>
+                <TextView
+                    android:id="@+id/keordinat1"
+                    android:layout_below="@id/txtharga3"
+                    android:layout_toRightOf="@+id/ic_nama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:text="Titik Keordinat :"/>
+                <TextView
+                    android:id="@+id/keordinat2"
+                    android:layout_below="@+id/keordinat1"
+                    android:layout_toRightOf="@id/ic_harga"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff0000"
+                    android:textSize="15dp"
+                    android:text="Titik keordinat merupakan titik Longitude dan Latitude digunakan untuk rute navigasi Google maps Contoh: "/>
+                <TextView
+                    android:id="@+id/hollow1"
+                    android:layout_below="@+id/keordinat2"
+                    android:layout_centerInParent="true"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"/>
+
+                <TextView
+                    android:id="@+id/txtlat"
+                    android:textColor="#ff0000"
+                    android:gravity="center"
+                    android:layout_toLeftOf="@+id/hollow1"
+                    android:layout_below="@+id/keordinat2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-1.609972"/>
+                <TextView
+                    android:id="@+id/txtlon"
+                    android:textColor="#ff0000"
+                    android:gravity="center"
+                    android:layout_toRightOf="@+id/hollow1"
+                    android:layout_below="@+id/keordinat2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="103.607254"/>
+
+
+
+                <TextView
+                    android:id="@+id/min"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/txtlat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="#000"
+                    android:hint="-"/>
+
+                <EditText
+                    android:id="@+id/txttitik1"
+                    android:layout_toLeftOf="@+id/hollow1"
+                    android:layout_toRightOf="@+id/min"
+                    android:layout_below="@+id/txtlat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:inputType="numberDecimal"
+                    android:hint=" 1.609972"/>
+                <EditText
+                    android:id="@+id/txttitik2"
+                    android:layout_toRightOf="@+id/hollow1"
+                    android:layout_below="@+id/txtlat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:inputType="numberDecimal"/>
+
+                <Button
+                    android:id="@+id/btnupdate"
+                    android:layout_below="@+id/txttitik2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/rounded"
+                    android:backgroundTint="#2196F3"
+                    android:textColor="#fff"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:text="Update Data"/>
+                <!--_________________-->
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

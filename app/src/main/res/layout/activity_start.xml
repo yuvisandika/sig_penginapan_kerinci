@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/home_top"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded"
+            android:backgroundTint="#fff"
+            android:textColor="#000"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="50dp"
+            android:text="Aplikasi Sistem Informasi Geografis"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/i1"
+            android:layout_below="@+id/t1"
+            android:layout_centerHorizontal="true"
+            android:src="#fff"
+            android:layout_width="230dp"
+            android:layout_height="230dp"/>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_below="@+id/t1"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/lokasik"/>
+
+
+
+
+        <Button
+            android:id="@+id/login"
+            android:layout_above="@+id/register"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/rounded"
+            android:backgroundTint="#fff"
+            android:textColor="#4CAF50"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Log In"/>
+        <Button
+            android:id="@+id/register"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/rounded"
+            android:backgroundTint="#fff"
+            android:textColor="#ff0000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Registrasi"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

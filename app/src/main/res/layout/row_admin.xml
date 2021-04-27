@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/imageview1"/>
+
+        <TextView
+            android:layout_toRightOf="@+id/rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Main Title"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+            android:id="@+id/textView1"/>
+
+        <TextView
+            android:layout_toRightOf="@+id/rating"
+            android:layout_below="@id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sub Title"
+            android:textColor="#a9a9a9"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:textSize="15dp"
+            android:id="@+id/textView2"/>
+
+        <RatingBar
+            android:id="@+id/rating"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="15dp"
+            android:numStars="5"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:clickable="false"
+            android:stepSize="0.1"
+            android:theme="@style/RatingBar" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/rating"
+            android:background="#000"/>
+
+        <Button
+            android:visibility="invisible"
+            android:id="@+id/row_hapus"
+            android:layout_centerInParent="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_del"
+            android:backgroundTint="#ff0000"/>
+        <Button
+            android:visibility="invisible"
+            android:id="@+id/row_edit"
+            android:layout_centerInParent="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_pan"
+            android:backgroundTint="#2196F3"/>
+
+    </RelativeLayout>
+</LinearLayout>

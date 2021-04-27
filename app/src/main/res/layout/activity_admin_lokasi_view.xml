@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminLokasiView"
+    android:background="@drawable/card_color3"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Nama Lokasi"
+        android:gravity="center"
+        android:background="#4CAF50"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+
+                    android:id="@+id/img"
+                    android:layout_marginBottom="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_launcher_background"/>
+
+                <RelativeLayout
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_margin="5dp"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rounded"
+                        android:backgroundTint="#fff"/>
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_maps"/>
+
+                    <ImageView
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="5dp"
+                        android:layout_width="200dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rounded"
+                        android:backgroundTint="#fff"/>
+
+                    <ImageView
+                        android:id="@+id/a2"
+                        android:layout_toLeftOf="@+id/txtrate"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_baseline_star_half_24"/>
+                    <TextView
+                        android:id="@+id/txtrate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="0.0"
+                        android:textColor="#000"
+                        android:textSize="36dp"
+                        android:textStyle="italic"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="50dp"/>
+                    <TextView
+                        android:layout_below="@+id/txtrate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rating Hotel Kami"
+                        android:textColor="#000"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="50dp"
+                        android:layout_marginTop="5dp"/>
+
+
+
+
+                </RelativeLayout>
+
+                <!--alamat-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/ic_alamat"
+                        android:layout_margin="10dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_alamat"
+                        app:tint="#fff" />
+                    <TextView
+                        android:id="@+id/txt_alamat1"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/ic_alamat"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:text="Alamat"/>
+                    <TextView
+                        android:id="@+id/alamat"
+                        android:layout_below="@+id/txt_alamat1"
+                        android:layout_toRightOf="@+id/ic_alamat"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="20dp"
+                        android:textColor="#fff"
+                        android:text="Jl. lalalal"/>
+                    <View
+                        android:id="@+id/v1"
+                        android:background="#fff"
+                        android:layout_margin="10dp"
+                        android:layout_below="@id/alamat"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                </RelativeLayout>
+
+                <!--harga-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/ic_harga"
+                        android:layout_width="40dp"
+                        android:layout_margin="10dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_harga"
+                        android:textStyle="bold"
+                        app:tint="#fff" />
+                    <TextView
+                        android:id="@+id/h1"
+                        android:textColor="#fff"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/ic_harga"
+                        android:text="Harga :"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/t1"
+                        android:layout_below="@+id/h1"
+                        android:textColor="#fff"
+                        android:layout_toRightOf="@+id/ic_harga"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:text="Tipe Kamar"/>
+
+                    <View
+                        android:id="@+id/tv1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"/>
+                    <!--tipe-->
+                    <TextView
+                        android:id="@+id/tipe1"
+                        android:textColor="#fff"
+                        android:layout_below="@+id/t1"
+                        android:layout_toRightOf="@+id/ic_harga"
+                        android:layout_toLeftOf="@+id/tv1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="20dp"
+                        android:text="Tipe 1"/>
+                    <TextView
+                        android:id="@+id/tipe2"
+                        android:layout_below="@+id/tipe1"
+                        android:layout_toRightOf="@+id/ic_harga"
+                        android:layout_toLeftOf="@+id/tv1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="20dp"
+                        android:textColor="#fff"
+                        android:text="Tipe 2"/>
+                    <TextView
+                        android:id="@+id/tipe3"
+                        android:layout_below="@+id/tipe2"
+                        android:layout_toRightOf="@+id/ic_harga"
+                        android:layout_toLeftOf="@+id/tv1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="20dp"
+                        android:textColor="#fff"
+                        android:text="Tipe 3"/>
+                    <!--harga-->
+                    <TextView
+                        android:id="@+id/harga1"
+                        android:layout_below="@+id/t1"
+                        android:layout_toRightOf="@+id/tv1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="20dp"
+                        android:textColor="#fff"
+                        android:text="Harga 1"/>
+                    <TextView
+                        android:id="@+id/harga2"
+                        android:layout_below="@+id/harga1"
+                        android:layout_toRightOf="@+id/tv1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="20dp"
+                        android:textColor="#fff"
+                        android:text="Harga 2"/>
+                    <TextView
+                        android:id="@+id/harga3"
+                        android:layout_below="@+id/harga2"
+                        android:layout_toRightOf="@+id/tv1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="20dp"
+                        android:textColor="#fff"
+                        android:text="Harga 3"/>
+                </RelativeLayout>
+
+                <!--reting-->
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!--Rating-->
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/rating1"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:textColor="#fff"
+                        android:text="Berikan Rating"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+                    <RatingBar
+                        android:visibility="gone"
+                        android:id="@+id/rateBar"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/rating1"
+                        android:progressBackgroundTint="#FFF"
+                        android:progressTint="#fffb00"
+                        android:layout_margin="10dp"
+                        android:numStars="5"
+                        android:stepSize="0.1" />
+                    <Button
+                        android:visibility="gone"
+                        android:id="@+id/btnsubmit"
+                        android:layout_below="@+id/rateBar"
+                        android:layout_centerInParent="true"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/rounded"
+                        android:backgroundTint="#FFEB3B"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:text="Submit"/>
+
+                    <View
+                        android:background="#fff"
+                        android:layout_margin="10dp"
+                        android:layout_below="@id/btnsubmit"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                </RelativeLayout>
+
+                <!--Komentar-->
+                <!--<RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/ic_komen"
+                        android:layout_margin="10dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_komen"/>
+                    <TextView
+                        android:id="@+id/txt_komen1"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/ic_komen"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:text="Komentar :"/>
+
+                </RelativeLayout>-->
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <!--Button-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+
+        <TextView
+            android:id="@+id/holow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="" />
+
+        <Button
+            android:id="@+id/btn_nav"
+            android:onClick="onNav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded"
+            android:backgroundTint="#2196F3"
+            android:layout_toLeftOf="@+id/holow"
+            android:text="Navigasi"
+            android:textColor="#ffff"
+            android:textSize="25dp"/>
+
+        <Button
+            android:id="@+id/btntelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/holow"
+            android:background="@drawable/rounded"
+            android:backgroundTint="#4CAF50"
+            android:onClick="onCall"
+            android:text="Telpon"
+            android:textColor="#ffff"
+            android:textSize="25dp" />
+    </RelativeLayout>
+
+</LinearLayout>
